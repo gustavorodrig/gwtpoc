@@ -1,0 +1,26 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:gwt='urn:import:com.google.gwt.user.client.ui'
+             xmlns:res='urn:with:com.br.tur.reservafacil.cadastro.client.LoginResources'>
+    <ui:with type="br.tur.reservafacil.cadastro.client.LoginResources" field="res"></ui:with>
+    <gwt:HTMLPanel>
+        <div align="center">
+            <gwt:VerticalPanel res:styleName="{res.style.background}">
+                <gwt:Label text="Login" res:styleName="{res.style.blackText}" />
+                <gwt:TextBox ui:field="loginBox" res:styleName="{res.style.box}" />
+                <gwt:Label text="Password" res:styleName="{res.style.blackText}" />
+                <gwt:PasswordTextBox ui:field="passwordBox"
+                                     res:styleName="{res.style.box}" />
+                <gwt:HorizontalPanel verticalAlignment="middle">
+                    <gwt:Button ui:field="buttonSubmit" text="Submit"
+                                res:styleName="{res.style.loginButton}" />
+                    <gwt:CheckBox ui:field="myCheckBox" />
+                    <gwt:Label ui:field="myLabel" text="Lembrar Senha" res:styleName="{res.style.blackText}" />
+                </gwt:HorizontalPanel>
+                <gwt:Label ui:field="mensagemLabel1"
+                           res:styleName="{res.style.blackText}" />
+                <gwt:Label ui:field="mensagemLabel2"
+                           res:styleName="{res.style.blackText}" />
+            </gwt:VerticalPanel>
+        </div>
+    </gwt:HTMLPanel>
+</ui:UiBinder>

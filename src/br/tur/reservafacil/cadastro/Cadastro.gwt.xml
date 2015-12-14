@@ -1,0 +1,29 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+
+
+<module rename-to="cadastro">
+    <!-- Inherit the core Web Toolkit stuff.                  -->
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+    <!-- Inherit the UiBinder module.                               -->
+    <inherits name="com.google.gwt.uibinder.UiBinder"/>
+
+    <source path='shared'></source>
+    <source path="client"/>
+
+    <!-- Specify the app entry point class.                   -->
+    <entry-point class='br.tur.reservafacil.cadastro.client.Index'/>
+
+
+    <!--
+    <source path="br.tur.reservafacil.cadastro.shared.UsuarioDTODTO"></source>
+    <source path="server"></source>
+    -->
+
+    <!-- Specify the app servlets.                   -->
+    <servlet path='/cadastroService' class='br.tur.reservafacil.cadastro.server.CadastroServiceImpl'/>
+
+
+
+</module>
